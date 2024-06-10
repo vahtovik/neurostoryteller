@@ -3,8 +3,7 @@ import asyncio
 import aiofiles
 
 from dotenv import load_dotenv
-from ya_gpt import YandexGPTStoryteller
-from giga_chat import GigaChatStoryteller
+from helpers import YandexGPTStoryteller, GigaChatStoryteller
 
 
 async def tell_stories(city: str, genre: str, temperature: str, description: str, story_length: str) -> tuple:
