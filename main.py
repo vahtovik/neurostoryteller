@@ -1,4 +1,4 @@
-from weather_helper import WeatherHelper
+from helpers import WeatherHelper
 from utils import main_with_saving
 from dotenv import load_dotenv
 
