@@ -62,7 +62,7 @@ class WeatherHelper:
         try:
             response = requests.get(base_url, params=params)
             data = response.json()
-            # Проходим временным отрезкам прогнозов
+            # Проходим по временным отрезкам прогнозов
             for forecast in data['list']:
                 # Если дошли до прогноза на завтрашний день
                 if forecast['dt_txt'].split()[0] == (datetime.now() + timedelta(days=1)).strftime('%Y-%m-%d'):
