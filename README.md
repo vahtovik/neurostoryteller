@@ -1,5 +1,13 @@
 # neurostoryteller - рассказчик нейросказок
 
+Проект представляет из себя рассказчика сказок, сгенерированных с помощью YandexGPT и GigaChat. Промпт для запросов настроен на генерацию сказки про погоду в городе X в указанном жанре и указанной длины.
+
+Пример пользовательского ввода:
+![input example](https://github.com/vahtovik/neurostoryteller/blob/main/input_example.png?raw=true)
+
+Результат:
+![story example](https://github.com/vahtovik/neurostoryteller/blob/main/story_example.png?raw=true)
+
 Реализованы:
 * запросы к API OpenWeatherMap для получения прогноза погоды;
 * асинхронные запросы к YandexGPT API и GigaChat API для генерации сказок;
